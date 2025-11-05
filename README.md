@@ -43,7 +43,7 @@ graph TD
     
     subgraph Cloud ["☁️ Vercel / Netlify (雲端免費服務)"]
         F[⚡ CI/CD 觸發] --> G[🔧 Hugo 建置]
-        G --> H[🌐 i23.me 靜態網站<br/>全球 CDN 部署]
+        G --> H[🌐 vercel-8mk4.vercel.app<br/>全球 CDN 部署]
     end
 
     subgraph Human ["👨‍💻 人工審核流程"]
