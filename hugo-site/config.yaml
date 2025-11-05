@@ -5,7 +5,7 @@ theme: 'PaperMod'
 
 # 建置設定
 buildDrafts: false
-buildFuture: false
+buildFuture: true
 buildExpired: false
 uglyURLs: true
 

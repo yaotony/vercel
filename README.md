@@ -5,7 +5,7 @@
 [![Hugo](https://img.shields.io/badge/Hugo-0.118+-pink.svg)](https://gohugo.io/)
 
 **版本：** 2.0 (SSG 架構版)  
-**最後更新：** 2025-11-03
+**最後更新：** 2025-11-05
 
 ## 🎯 專案目標
 
