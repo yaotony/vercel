@@ -1,0 +1,152 @@
+baseURL: 'https://hugo-site-alpha.vercel.app'
+languageCode: 'zh-tw'
+title: '小明的 AI 科技觀點'
+theme: 'PaperMod'
+
+# 建置設定
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+uglyURLs: true
+
+# 分頁設定
+pagination:
+  pagerSize: 10
+
+# 語言設定
+defaultContentLanguage: 'zh-tw'
+defaultContentLanguageInSubdir: false
+
+# Hugo 版本要求（避免 Vercel 版本問題）
+module:
+  hugoVersion:
+    min: "0.116.0"
+    extended: true
+
+# 網站參數
+params:
+  env: production
+  title: "小明的 AI 科技觀點"
+  description: "透過 AI 技術分享最新科技趨勢與獨到見解"
+  keywords: [AI, 科技, GPT, 自動化, 人工智慧, 機器學習, 深度學習]
+  author: "小明"
+  
+  # 顯示設定
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  
+  # 首頁設定
+  homeInfoParams:
+    Title: "歡迎來到小明的 AI 科技觀點 🚀"
+    Content: >
+      探索人工智慧的無限可能，分享最新科技趨勢與深度見解。
+      
+      
+      這裡有最前沿的 AI 技術分析、實用的程式教學，
+      以及對科技產業的獨到觀點。讓我們一起在 AI 時代中成長！
+  
+  # 社群連結
+  socialIcons:
+    - name: github
+      url: "https://github.com/your-username"
+    - name: twitter
+      url: "https://twitter.com/your-username"
+    - name: linkedin
+      url: "https://linkedin.com/in/your-username"
+    - name: rss
+      url: "index.xml"
+
+  # SEO 設定
+  images: ["cover.jpg"]
+  
+  # 分析和廣告
+  analytics:
+    google:
+      SiteVerificationTag: "your-google-verification-tag"
+  
+  # 評論系統 (可選)
+  comments: false
+
+# 選單設定
+menu:
+  main:
+    - identifier: categories
+      name: 分類
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 標籤
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: 歸檔
+      url: /archives/
+      weight: 30
+    - identifier: about
+      name: 關於
+      url: /about/
+      weight: 40
+
+# 標記設定
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    lineNumbersInTable: false
+    style: github
+
+# 輸出格式
+outputs:
+  home:
+    - HTML
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
+
+# 分類法設定
+taxonomies:
+  category: categories
+  tag: tags
+
+# Minify 設定
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# 隱私設定
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  x:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+# 服務設定
+services:
+  googleAnalytics:
+    ID: "G-YOUR-ANALYTICS-ID"
+
+# 多語言設定已移除，使用單一語言

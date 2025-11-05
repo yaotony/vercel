@@ -1,0 +1,74 @@
+# AutoPost 設定檔範本
+# 複製此檔案為 config.yaml 並填入您的實際 API 金鑰
+
+# API 設定
+apis:
+  openai:
+    api_key: "sk-your-openai-api-key-here"
+    model: "gpt-4"
+    image_model: "dall-e-3"
+    max_tokens: 2000
+    temperature: 0.7
+  
+  news_api:
+    api_key: "your-newsapi-key-here"
+    country: "tw"
+    language: "zh"
+    page_size: 20
+  
+  github:
+    token: "ghp_your-github-token-here"  # 用於私有儲存庫 (可選)
+
+# 網站設定
+site:
+  name: "小明的 AI 科技觀點"
+  description: "透過 AI 技術分享最新科技趨勢與獨到見解"
+  author: "小明"
+  base_url: "https://your-site.vercel.app"
+  keywords: ["AI", "科技", "GPT", "自動化", "人工智慧"]
+
+# 內容生成設定
+content:
+  daily_posts: 3
+  categories: 
+    - "AI"
+    - "科技"
+    - "教學"
+    - "趨勢"
+    - "分析"
+  
+  # 文章品質控制
+  min_word_count: 800
+  max_word_count: 1200
+  
+  # 圖片設定
+  cover_image:
+    width: 1200
+    height: 630
+    format: "jpg"
+    quality: 85
+
+# Git 設定
+git:
+  repo_path: "./hugo-site"
+  repo_url: "https://github.com/your-username/autopost-site.git"
+  branch: "main"
+  commit_author: "AutoPost Bot"
+  commit_email: "autopost@your-domain.com"
+
+# 排程設定
+schedule:
+  generation_interval: 2  # 小時
+  cleanup_interval: 24    # 小時
+  
+# 日誌設定
+logging:
+  level: "INFO"
+  file: "logs/autopost.log"
+  max_size: 10  # MB
+  backup_count: 5
+
+# 快取設定
+cache:
+  topics_ttl: 3600      # 話題快取時間 (秒)
+  images_ttl: 86400     # 圖片快取時間 (秒)

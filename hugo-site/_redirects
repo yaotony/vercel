@@ -1,0 +1,17 @@
+# Hugo version for Vercel deployment
+HUGO_VERSION=0.152.2
+
+# Build settings
+[build.environment]
+HUGO_VERSION = "0.152.2"
+HUGO_ENV = "production"
+
+[build]
+command = "hugo --gc --minify"
+publish = "public"
+
+# Redirect rules (optional)
+[[redirects]]
+from = "/*"
+to = "/404"
+status = 404
